@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@caremiumos-dev/node-moment-sdk':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
       '@deepseek-ai/dsh-tools':
         specifier: 0.2.1-rc.2
         version: 0.2.1-rc.2(53871834bb50b7f532ec7289e680bbda)
@@ -27,8 +27,8 @@ importers:
 
 packages:
 
-  '@caremiumos-dev/node-moment-sdk@0.1.0':
-    resolution: {integrity: sha512-lqlWCLBHVQvqYrhg2ShCg6swKYhX53XnzoRsVgTZOCMKTqtUs0KayWdbCCH0G1PYNDll6lm8OD4L67reBUGxCw==}
+  '@caremiumos-dev/node-moment-sdk@0.1.1':
+    resolution: {integrity: sha512-+BpN5op2McyNZ3fEj8hICq1QudSlUC/W6WGzTHwinoBVWuWuRIqXEEfRRQ/nPhuPMVG7j+yyPcgdBtb2ynEMuQ==}
     engines: {node: '>=22.19'}
 
   '@deepseek-ai/cordis@4.0.5':
@@ -209,7 +209,7 @@ packages:
 
 snapshots:
 
-  '@caremiumos-dev/node-moment-sdk@0.1.0': {}
+  '@caremiumos-dev/node-moment-sdk@0.1.1': {}
 
   '@deepseek-ai/cordis@4.0.5':
     dependencies:

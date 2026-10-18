@@ -1,4 +1,5 @@
 import { defineTool } from '@deepseek-ai/dsh-tools'
+import { TOPIC_TYPE } from '@caremiumos-dev/node-moment-sdk'
 
 import { toCommentView, toMomentView } from '../format.js'
 import { ok, RESULT_OUTPUT, run, type MomentContext } from '../result.js'
@@ -114,8 +115,8 @@ export function listMomentTopicsTool(context: MomentContext) {
             name: topic.topicName,
             color: topic.color ?? null,
             jumpUrl: topic.jumpUrl || null,
-            // 1 = 官方话题（可带外链），0 = 普通话题。
-            topicType: topic.topicType ?? 0,
+            // 0 = 官方话题（可带外链），1 = 用户自建话题。方向别记反。
+            topicType: topic.topicType ?? TOPIC_TYPE.official,
           })),
         })
       })
