@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@caremiumos-dev/node-moment-sdk':
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: link:../node-moment-sdk
+        version: link:../node-moment-sdk
       '@deepseek-ai/dsh-tools':
         specifier: 0.2.1-rc.2
         version: 0.2.1-rc.2(53871834bb50b7f532ec7289e680bbda)
@@ -26,10 +26,6 @@ importers:
         version: 5.9.3
 
 packages:
-
-  '@caremiumos-dev/node-moment-sdk@0.1.1':
-    resolution: {integrity: sha512-+BpN5op2McyNZ3fEj8hICq1QudSlUC/W6WGzTHwinoBVWuWuRIqXEEfRRQ/nPhuPMVG7j+yyPcgdBtb2ynEMuQ==}
-    engines: {node: '>=22.19'}
 
   '@deepseek-ai/cordis@4.0.5':
     resolution: {integrity: sha512-Sktq5axy0owk9PdnivBRNOJjHEVEibCt0+TDDZcv0+UH2KS1M910fX4kn5y45YFsrpZIi1mJf/1s5VzywMUnyg==}
@@ -209,8 +205,6 @@ packages:
 
 snapshots:
 
-  '@caremiumos-dev/node-moment-sdk@0.1.1': {}
-
   '@deepseek-ai/cordis@4.0.5':
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.6
@@ -324,7 +318,7 @@ snapshots:
     dependencies:
       '@deepseek-ai/cordis': 4.0.5
       '@deepseek-ai/dsh-brand': 0.2.1-rc.2(@deepseek-ai/cordis@4.0.5)
-      zod: 4.4.3
+      zod: 4.6.7
 
   '@deepseek-ai/dsh-user-approval@0.2.1-rc.2(7c74ae09be77145a81b9b3cef273e232)':
     dependencies:

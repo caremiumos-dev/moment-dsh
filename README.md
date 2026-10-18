@@ -10,8 +10,8 @@ DeepSeek Harness 插件：把 moment（好友圈）服务变成一组模型可�
 
 | 工具 | 说明 |
 | --- | --- |
-| `publish_moment` | 发动态。传 `imagePaths` 走多图（type 26），否则纯文字（type 3） |
-| `get_moment` | 按 `momentId` 取一条，或按时间倒序取一页；带图片地址、话题、点赞数、评论 |
+| `publish_moment` | 发动态。传 `videoPath` 走视频（无文字 6 / 有文字 27），传 `imagePaths` 走多图（type 26），否则纯文字（type 3） |
+| `get_moment` | 按 `momentId` 取一条，或按时间倒序取一页；带图片、视频地址、封面、话题、点赞数、评论 |
 | `list_moment_comments` | 单条动态的完整评论列表（分页） |
 | `list_moment_topics` | 推荐话题与发布限制（`maxTopicCount`） |
 | `like_moment_by_id` | 点赞（幂等） |

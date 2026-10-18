@@ -19,12 +19,16 @@ export interface MomentView {
   momentId: string
   watchId: string
   watchName: string
-  /** 3 文字 / 5 单图 / 26 多图 / 27 视频。 */
+  /** 3 文字 / 5 单图 / 6 短视频 / 24 视频分享 / 26 多图 / 27 视频+文字 / 28 多图分享。 */
   type: number
   /** 正文文字；图片 / 视频动态里从嵌套 JSON 中取。 */
   text: string
-  /** 图片绝对地址。 */
+  /** 图片绝对地址。视频动态里这里是封面图。 */
   images: string[]
+  /** 视频绝对地址；非视频动态为空数组。 */
+  videos: string[]
+  /** 视频封面；只有视频动态才有。 */
+  cover: string | null
   /** 话题名（不含括号）。 */
   topics: string[]
   /** ISO-8601（UTC）。 */
@@ -63,6 +67,8 @@ export function toMomentView(moment: Moment, options: { includeComments?: boolea
     type: moment.type,
     text: body.text,
     images: body.images,
+    videos: body.videos,
+    cover: body.cover ?? null,
     topics: (moment.topicList ?? []).map((topic) => topic.topicName),
     createdAt: toIso(moment.createTime),
     createTime: moment.createTime,
