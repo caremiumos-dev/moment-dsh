@@ -22,7 +22,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@caremiumos-dev/node-moment-sdk": "link:../node-moment-sdk",
+    "@caremiumos-dev/node-moment-sdk": "^0.2.0",
     "@deepseek-ai/dsh-tools": "0.2.1-rc.2"
   },
   "peerDependencies": {
